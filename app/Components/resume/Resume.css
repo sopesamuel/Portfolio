@@ -1,0 +1,139 @@
+.resume__container {
+    /* grid-template-columns: repeat(2,1fr); */
+    row-gap: .75rem;
+}
+
+.timeline {
+    background-color: var(--container-color);
+    padding: 1.75rem;
+    border-radius: var(--border-radius);
+    position: relative;
+    box-shadow: var(--shadow);
+}
+
+.timeline__item{
+    position: relative;
+    padding-left: 3.125rem;
+    padding-bottom: 3.123rem;
+}
+
+.timeline__item:last-child
+{
+    padding-bottom: 0%;
+}
+
+.timeline__item::before{
+    content: '';
+    width: 1px;
+    height: 100%;
+    background-color: var(--first-color);
+    position: absolute;
+    left: .25rem;
+}
+
+.timeline .icon-briefcase,
+.timeline .icon-graduation {
+    position: absolute;
+    left: -0.4375rem;
+    font-size: var(--h2-font-size);
+    color: black;
+    background-color: var(--container-color);
+    padding: 0.4375rem 0;
+}
+
+.timeline__date {
+    color: "red";
+    font-size: var(--small-font);
+}
+
+
+.avatar1{
+    height: 55px;
+    width: 55px;
+}
+
+.avatar2{
+    height: 50px;
+    width: 50px;
+    margin-bottom: 10px;
+}
+
+
+
+.timeline__title {
+    font-size: var(--h3-font-size);
+    margin: 0.5rem  ;
+    color: black;
+}
+
+
+.timeline__data {
+    font-size: 13px;
+    margin: 0.5rem  ;
+    color: black;
+}
+
+
+.timeline__text {
+    font-size: 13px;
+    font-weight: 400;
+    margin: 0.5rem  ;
+    color: brown;
+}
+
+
+
+
+ @media screen and (max-width: 1024) {
+    .resume__container {
+        grid-template-columns: 540px;
+        justify-content: center;
+        row-gap: 1.875rem;
+    }
+
+    .timeline__item::before {
+        left: 2px;
+    }
+ }
+
+
+ @media screen and (max-width: 576px) {
+    .resume__container {
+        grid-template-columns: 1fr;
+    }
+ }
+
+ @media screen and (max-width: 350px) {
+    .timeline__item {
+        padding-left: 1.875rem;
+        padding-bottom: 1.875rem;
+        color: black;
+    }
+
+    .timeline__item::before 
+    {
+        left: 0%;
+        color: black;
+    }
+
+    .timeline .icon-briefcase,
+    .timeline .icon-graduation {
+        left: -9px;
+        color: "red";
+    }
+
+    .timeline__text {
+        text-align: justify;
+        color: black;
+
+    }
+
+    }
+
+    @media screen and (max-width: 576px) {
+
+        .about__container {
+            grid-template-columns: 320px;
+        }
+
+    }

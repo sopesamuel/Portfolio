@@ -7,7 +7,7 @@ import Image from 'next/image'
 
 const Sidebar = () => {
 
-  const [toggle, showMenu] = useState(true);
+  const [toggle, showMenu] = useState(false);
   return (
     <>
     <aside className={toggle ? "aside show-menu" : "aside"}>

@@ -13,7 +13,7 @@ const Home = () => {
    <div className='intro'>
     <Image src={avatar} height={145} width={160} alt='' className='home__img'/>
     <h1 className='home__name'>Mosope Fasusi</h1>
-    <span className='home__education'>I&apos;m a Frontend Developer</span>
+    <span className='home__education'>I&apos;m a Frontend Engineer</span>
 
     <HeaderSocials/>
     <ScrollDown/>
